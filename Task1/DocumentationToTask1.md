@@ -1,30 +1,30 @@
-_(1b) Dokumentujte Vaše prvotné zamyslenie k riešeniu zadania projektu, napr. sú niektoré atribúty medzi sebou závislé? 
+**(1b) Dokumentujte Vaše prvotné zamyslenie k riešeniu zadania projektu, napr. sú niektoré atribúty medzi sebou závislé? 
   od ktorých atribútov závisí predikovaná premenná? 
   či sa dá kombinovať záznamy z viacerých súborov? 
-  či je potrebné ich kombinovať?
-_
+  či je potrebné ich kombinovať?**
+
 
 When starting this project, it was important for me to do some initial data analysis and make sense of the data. To do this, I asked myself several questions:
 
-1) Attribute dependencies
-    I wondered if there were any dependencies between attributes. For example, I wanted to know if there was any dependency between the attributes         'session_duration' and 'total_load_time'. To do this, I used correlation analysis.
+**1) Attribute dependencies**
+    I wondered if there were any dependencies between attributes. For example, I wanted to know if there was any dependency between the attributes         '_session_duration_' and '_total_load_time_'. To do this, I used correlation analysis.
 
-2) Predictive variable
+**2) Predictive variable**
     I was interested in which attributes the predicted variable depends on. In this case, it is 'session_duration'. I wanted to understand which attributes could affect the session duration.
 
-3) Data merging
+**3) Data merging**
     I was also interested in understanding if data from multiple files could be merged. In my case, I was working with 'user', 'session' and 'product' tables. I looked into the possibility of merging the data for analysis.
 
 Examples from the code above:
 
-To analyze the dependencies between the 'session_duration' and 'total_load_time' attributes, I used:
+To analyze the dependencies between the '_session_duration_' and '_total_load_time_' attributes, I used:
 
 ```
 print("Pearson correlation: %.3f" % session.session_duration.corr(session.total_load_time))
 ```
 This allowed me to determine the degree of correlation between the two attributes.
 
-To identify which attributes might be influencing 'session_duration', I used linear regression. Sample code:
+To identify which attributes might be influencing '_session_duration_', I used linear regression. Sample code:
 
 ```
 # Create a linear regression model
