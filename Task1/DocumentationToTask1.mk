@@ -1,0 +1,1 @@
+(1b) Dokumentujte Vaše prvotné zamyslenie k riešeniu zadania projektu, napr. sú niektoré atribúty medzi sebou závislé? od ktorých atribútov závisí predikovaná premenná? či sa dá kombinovať záznamy z viacerých súborov? či je potrebné ich kombinovať?
